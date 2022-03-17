@@ -9,6 +9,7 @@ Rails.application.routes.draw do
       resource :me, only:[:show]
       resources :items
       resources :tags
+      get '/items/search/:keyword', to: 'items#search'
     end
   end
   
