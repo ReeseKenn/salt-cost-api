@@ -61,6 +61,7 @@ test:
 #
 production:
   <<: *default
-  database: salt_cost_api_production
-  username: salt_cost_api
-  password: <%= ENV["SALT_COST_API_DATABASE_PASSWORD"] %>
+  database: salt_cost_prod
+  username: salt
+  password: <%= ENV["DB_PASSWORD"] %>
+  host: <%= ENV["DB_HOST"] %>
