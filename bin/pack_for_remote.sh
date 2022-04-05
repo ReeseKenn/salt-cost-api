@@ -35,5 +35,5 @@ scp $current_dir/setup_remote.sh $user@$ip:$deploy_dir/
 title '上传版本号'
 ssh $user@$ip "echo $time > $deploy_dir/version"
 title '执行远程脚本'
-ssh $user@$ip "export version=$time; /bin/sh $deploy_dir/setup_remote.sh"
+ssh $user@$ip "export version=$time; /bin/bash $deploy_dir/setup_remote.sh"
 title 'DONE!'
