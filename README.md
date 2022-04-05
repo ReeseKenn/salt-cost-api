@@ -29,4 +29,13 @@ Things you may want to cover:
 1. 创建controller `bin/rails g controller Api::V1::Items`  
 2. 数据库迁移 `bin/rails db:rollback`  
             `bin/rails db:migrate`  
-3. 创建model `bin/rails g model item user_id:integer amount:integer notes:text tags_id:integer happen_at:datetime`  
+3. 创建model `bin/rails g model item user_id:integer amount:integer notes:text tags_id:integer happen_at:datetime`
+
+#### 部署
+1. 部署到宿主机  
+```
+pack_for_host.sh 打包到外部
+运行setup_host.sh 部署到宿主机
+```
+2. 部署到云服务器  
+`bin/pack_for_remote.sh` 一键部署到云服务器  
