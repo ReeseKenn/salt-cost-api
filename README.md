@@ -31,6 +31,8 @@ Things you may want to cover:
             `bin/rails db:migrate`  
 3. 创建model `bin/rails g model item user_id:integer amount:integer notes:text tags_id:integer happen_at:datetime`
 
+
+启动 bin/rails s
 #### 部署
 1. 部署到宿主机  
 ```
