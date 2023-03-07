@@ -23,6 +23,18 @@ Things you may want to cover:
 
 * ...
 
+初始化项目步骤
+```gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/
+bundle config mirror.https://rubygems.org https://gems.ruby-china.com
+gem install rails -v 7.0.2.3
+pacman -S postgresql-libs  // 安装postgresql驱动
+
+// cd 工作空间
+rails new --api --database=postgresql --skip-test project-name
+cd project-name
+// 新建终端
+bundle exe rails server  //bin/rails s
+```
 
 数据库创建命令： `docker run -d  -p 5432:5432  --name db-for-salt-cost     -e POSTGRES_USER=salt        -e POSTGRES_PASSWORD=123456      -e POSTGRES_DB=salt_cost_dev      -e PGDATA=/var/lib/postgresql/data/pgdata      -v salt-cost-data:/var/lib/postgresql/data      --network=network1       postgres:14`
 
